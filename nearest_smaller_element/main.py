@@ -28,7 +28,7 @@ def nearestSmaller(A):
             B.append(None)
             S.push(A[i])
         else:
-            while not S.empty() and A[i]< S.top():
+            while not S.empty() and A[i]<= S.top():
                 S.pop()
             if S.empty():
                 B.append(None)
